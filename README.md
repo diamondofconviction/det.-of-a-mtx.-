@@ -1,23 +1,41 @@
-# det.-of-a-mtx.-
-C++ Program to find the determinant of a real 3x3 matrix. 
+A 3×3 Matrix Determinant Calculator
 
-Features:
-1. Program to find the determinant of a 3x3 matrix.
-2. Supports decimal value inputs.
-3. gives the value of determinant in output.
+A beginner-level C++ project that calculates the determinant of a 3×3 matrix with real-valued entries using cofactor expansion along the first row.
 
-Formula used: 
-A - B + C = Value of determinant. 
-Where, A = a11(a33*a22) - a11(a32*a23)
-       B = a12(a33*a21) - a12(a31*a23)
-       C = a13(a328a21) - a13(a31*a22)
+Features
 
-Demerits:
-1. Currently, can find determinant of a 3x3 matrix.
-2. Can find determinant only by the expansion of row - 1.
-3. Can't find determinant of a complex matrix.
+- Accepts nine matrix elements as input.
+- Supports decimal-valued entries using `double`.
+- Calculates the determinant using the cofactor expansion formula.
+- Displays the result in the terminal.
 
-Future upgrades:
-1. Finding determinants of greater matrices. 
-2. Finding determinant by any row or column expansion.
-3. Finding determinant of complex matrices. 
+Mathematical Formula
+
+\[
+\det(A)=a_{11}(a_{22}a_{33}-a_{23}a_{32})
+-a_{12}(a_{21}a_{33}-a_{23}a_{31})
++a_{13}(a_{21}a_{32}-a_{22}a_{31})
+\]
+
+Limitations
+
+- Supports only 3×3 matrices.
+- Uses cofactor expansion along the first row.
+- Floating-point arithmetic can introduce rounding errors.
+- Complex-valued matrices are not supported.
+
+Future Improvements
+
+- Support matrices of larger dimensions.
+- Implement expansion along any row or column.
+- Add input validation and error handling.
+- Support complex-valued matrices.
+
+Technologies
+
+- C++
+- Standard Input/Output (`iostream`)
+
+Learning Objective
+
+To understand determinant calculation, cofactor expansion, arithmetic expressions, and basic C++ input/output.
