@@ -1,2 +1,2 @@
 # det.-of-a-mtx.-
-to find determinant of a matrix. 
+C++ Program to find the determinant of a real 3x3 matrix. 
